@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador de Texto</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <h1> <a href="#"><img src="img/logo.svg" alt="Logo Alura"></a></h1>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="card-requisitos">
+        <form class="requisitos">
+          <textarea class="textarea-requisitos" placeholder="Digite seu Texto" autofocus id="textInput"></textarea>
+            <div class="requisitos-container">
+              <img class="imagem-requisitos" src="img/sinal.svg" alt="">
+              <span class="texto-requisitos">Apenas letras minúsculas e sem acento.</span>
+            </div>
+            <div class="btns-container">
+              <button class="btn-cripto" type="button" onclick="btnCripto()">Criptografar</button>
+              <button class="btn-descripto" type="button" onclick="btnDecripto()">Descriptografar</button>
+            </div>
+        </form>
+      </div>
+      <div class="card-mensagem">
+        <form class="mensagem">
+          <div class="mostraMensagemVazia" id='mensagemVazia' >
+              <img src="img/boneco.svg" alt="Ilustração de um texto vazio">
+              <h3>Nenhuma mensagem encontrada</h3>
+              <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+          </div>
+          <textarea class="textarea-mensagem" id="mostrarMensagem"></textarea>
+          <button class="ocultarBtn" type="button" onclick="copiaTexto()" id="copiarBtn">Copiar</button>
+      </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="conteudo-footer container">
+      <p>Copyright &copy; 2022.</p>
+      <p>By: <a href="https://github.com/joosecj" target="_blank">José Carlos</a></p>
+      <p>Todos direitors reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/cripto.js"></script>
+  <script src="js/descripto.js"></script>
+  <script src="js/copia.js"></script>
+</body>
+</html>
