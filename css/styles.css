@@ -101,8 +101,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    left: 62%;
-    bottom: 100px;
+    /*left: 62%;*/
+    bottom: -110px;
     gap: 1rem; 
 }
 
